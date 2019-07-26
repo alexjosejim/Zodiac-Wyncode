@@ -1,11 +1,16 @@
 ﻿import React from "react"
-import { BrowserRouter, Route } from "react-router-dom"
-import Home from "./components/pages/Home"
+import { BrowserRouter, Route} from "react-router-dom"
+import HoroscopeDisplay from "./components/pages/HoroscopeDisplay"
+import Calculator from "./components/pages/Calculator"
+import "./components/styles/Calculator.css"
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Route exact path="/" component={ Home } />
+      <React.Fragment>
+        <Route exact path="/" component={ Calculator } />
+        <Route exact path='/zodiac/:zodiac' component={ HoroscopeDisplay } />
+      </React.Fragment>
     </BrowserRouter>
   )
 }
