@@ -3,5 +3,12 @@ import ReactDOM from "react-dom"
 import App from "./App"
 import registerServiceWorker from "./registerServiceWorker"
 
-ReactDOM.render(<App/>, document.getElementById("root"))
+
+
+      // response.forEach(item => console.log(item.famous_people) )
+
+
+
+
+ReactDOM.render(<App/>, document.getElementById("characters"))
 registerServiceWorker()

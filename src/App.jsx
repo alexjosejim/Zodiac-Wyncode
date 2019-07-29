@@ -18,7 +18,7 @@ const App = () => {
       <Footer/>
       </React.Fragment>
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default App
+export default App;
