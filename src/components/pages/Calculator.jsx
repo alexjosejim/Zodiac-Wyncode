@@ -122,20 +122,20 @@ class Calculator extends React.Component {
 
   render(){
     return (
-      <body>
-      <form class="calculator"  onSubmit={this.handlePrint}>
-      <span>When is Your Birthday?</span>
-        <select  class="browser-default" name="month">
-          <option value="">Month</option>
-          {
-            months.map( month => <option key={month} value={month}>{month}</option>)
-          }
-        </select>
-        <select  class="browser-default" name="day">
-          <option value="">Day</option>
-          {
-            days.map( day => <option key={day} value={day}>{day}</option>)
-          }
+      <div>
+        <form class="calculator"  onSubmit={this.handlePrint}>
+          <span>When is Your Birthday?</span>
+          <select  class="browser-default" name="month">
+            <option value="">Month</option>
+            {
+              months.map( month => <option key={month} value={month}>{month}</option>)
+            }
+          </select>
+          <select  class="browser-default" name="day">
+            <option value="">Day</option>
+            {
+              days.map( day => <option key={day} value={day}>{day}</option>)
+            }
           </select>
           <button id="submit" type="submit"> Submit </button>
           </form>
@@ -146,7 +146,8 @@ class Calculator extends React.Component {
               <Link to={`/zodiac/${this.state.sign}`} onSubmit={this.goToSign}>{this.state.sign}</Link>
             </div>
           }
-          </body>
+        </div>
+      </div>
     )
   }
 }
