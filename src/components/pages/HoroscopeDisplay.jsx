@@ -1,9 +1,13 @@
 import React from 'react'
+import './HoroscopeDisplay.css'
+
+const MENU_OPTIONS = ["compatibility", "favorites", "mental_traits", "physical_traits"]
 
 class HoroscopeDisplay extends React.Component{
 
   state = {
-    sunSign: {}
+    sunSign: {},
+    menuSelected: "compatibility"
   }
 
   componentDidMount (){
@@ -17,24 +21,66 @@ class HoroscopeDisplay extends React.Component{
     console.log(this.props.testProp)
     return (
       <div>
-        <div>
-         <h1  class= "border" >{this.props.match.params.zodiac}</h1>
+        <div class="border" >
+           <h1>{this.props.match.params.zodiac}</h1>
+           <small>{ this.state.sunSign.vibe }</small>
         </div>
-        <section id="center">
-          { this.state.sunSign.vibe }
-          {
-            this.state.sunSign.mental_traits &&
-              this.state.sunSign.mental_traits.map( trait => {
-                return(
-                  <p>{trait}</p>
-                )
-              })
-          }
-        </section>
+
+				<div id="main">
+					<div id="horoscope-display" class="container">
+						<div class="row main-row">
+							<div class="col-12 col-sm-4">
+								<section>
+									<h2>Options</h2>
+									<ul>
+									  {
+                      MENU_OPTIONS.map( option => {
+                        let styles = this.state.menuSelected === option ? { color: 'hotpink' } : { color: '#ffa' }
+                        return(
+                          <li
+                            key={option}
+                            className="text-capitalize"
+                            style={ styles }
+                            onClick={ ()=>{ this.setState({ menuSelected: option }) } }
+                            >
+                            { option.replace('_',' ') }
+                          </li>
+                        )
+                      })
+                    }
+									</ul>
+								</section>
+							</div>
+							<div class="col-12 col-sm-8 col-12-medium imp-medium">
+
+								<section>
+									<h2></h2>
+                    {
+                      this.state.sunSign[this.state.menuSelected] &&
+                          this.state.sunSign[this.state.menuSelected].map( elem => {
+                          return(
+                            <p>{elem}</p>
+                          )
+                        })
+                    }
+								</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+
       </div>
 
     )
   }
 }
+
+
+
+
+
+
 
 export default HoroscopeDisplay

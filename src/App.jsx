@@ -5,6 +5,7 @@ import Calculator from "./components/pages/Calculator"
 import Navigation from "./components/pages/Navigation"
 import Footer from "./components/pages/Footer"
 import "./components/Styles/Styles.css"
+import "bootstrap/dist/css/bootstrap.css"
 
 
 const App = () => {
@@ -13,7 +14,7 @@ const App = () => {
       <React.Fragment>
       <Navigation/>
         <Route exact path="/" component={ Calculator } />
-        <Route exact path='/zodiac/:zodiac' component={ HoroscopeDisplay } />
+        <Route exact path='/zodiac/:zodiac' render={ props => <HoroscopeDisplay {...props} key={props.match.params.zodiac} /> } />
       <Route exact path='/zodiac' component={Navigation} />
       <Footer/>
       </React.Fragment>
