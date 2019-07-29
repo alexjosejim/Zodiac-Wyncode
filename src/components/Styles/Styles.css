@@ -1,0 +1,97 @@
+body  {
+  background: url("https://images.wallpaperscraft.com/image/mountains_night_sky_stars_92704_2560x1440.jpg");
+  min-height: 100vh;
+  font-family: 'Roboto Slab', serif;
+  color:white;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  font-size-adjust: auto;
+}
+
+#submit {
+  background-color:#505980;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
+}
+ #center{
+   align-items: center;
+   background-color: #111;
+   color: #fff;
+   padding: 18px;
+   text-align: center;
+   font-size-adjust: auto;
+ }
+#sign-result-button {
+  flex:auto;
+  width: 350px;
+  height: 125px;
+  position: absolute;
+  color: #fff;
+  background-color: #111;
+  font-size: 50px;
+  top: 70%;
+  left:37%;
+  padding: 27px;
+  text-decoration: none;
+  border-radius: 20px;
+  text-align: center;
+}
+
+h1{
+  color:#fff;
+}
+nav {
+  background-color: #000;
+}
+.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  letter-spacing: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.calculator {
+  width: 750px;
+  height: 250px;
+  position: absolute;
+  top: 35%;
+  left:20%;
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 40px;
+  letter-spacing: 10px;
+  border-radius:8px;
+  display: flex;
+  align-items: center;
+  align-content:stretch;
+  column-count: 2;
+}
+
+
+footer {
+  background-color: #111;
+  color: white;
+  padding-bottom: 0;
+  flex: 50%;
+  margin-bottom: 0;
+  height: 100px;
+}
+li {
+   display: inline;
+   padding-left: 30px;
+   font-size: 20px;
+
+
+ }
+select{
+  font-size: 20px;
+  flex: 50%;
+}

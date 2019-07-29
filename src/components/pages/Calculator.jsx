@@ -24,7 +24,7 @@ class Calculator extends React.Component {
         sign ="Capricorn";
       }
     }
-    else if (month === "january"){
+    else if(month === "january"){
       if (day < 20){
       sign = "Capricorn";
       }
@@ -32,7 +32,7 @@ class Calculator extends React.Component {
         sign = "Aquarius";
       }
     }
-    else if (month ==="february"){
+    else if(month ==="february"){
       if (day < 19){
         sign = "Aquarius";
       }
@@ -48,7 +48,7 @@ class Calculator extends React.Component {
         sign = "Aries";
       }
     }
-    else if (month === "april"){
+    else if(month === "april"){
       if (day < 20){
         sign = "Aries";
       }
@@ -56,7 +56,7 @@ class Calculator extends React.Component {
         sign = "Taurus";
       }
     }
-    else if (month === "may"){
+    else if(month === "may"){
       if (day < 21){
         sign = "Taurus";
       }
@@ -64,7 +64,7 @@ class Calculator extends React.Component {
       sign = "Gemini";
       }
     }
-    else if( month === "june"){
+    else if(month === "june"){
       if (day < 21){
         sign = "Gemini";
       }
@@ -72,7 +72,7 @@ class Calculator extends React.Component {
         sign = "Cancer";
       }
     }
-    else if (month === "july"){
+    else if(month === "july"){
       if (day < 23){
         sign = "Cancer";
       }
@@ -80,7 +80,7 @@ class Calculator extends React.Component {
       sign = "Leo";
      }
     }
-    else if( month === "august"){
+    else if(month === "august"){
       if (day < 23){
         sign = "Leo";
       }
@@ -88,7 +88,7 @@ class Calculator extends React.Component {
         sign = "Virgo";
       }
     }
-    else if (month === "september"){
+    else if(month === "september"){
       if (day < 23){
         sign = "Virgo";
       }
@@ -96,7 +96,7 @@ class Calculator extends React.Component {
         sign = "Libra";
       }
     }
-    else if (month === "october"){
+    else if(month === "october"){
       if (day < 23){
         sign = "Libra";
       }
@@ -104,7 +104,7 @@ class Calculator extends React.Component {
         sign = "Scorpio";
       }
     }
-    else if (month === "november"){
+    else if(month === "november"){
       if (day < 22){
         sign = "Scorpio";
       }
@@ -122,28 +122,30 @@ class Calculator extends React.Component {
 
   render(){
     return (
-    <div  className="calculator">
-      <span className="border">When is Your Birthday?</span>
-      <form onSubmit={this.handlePrint}>
-        <select name="month">
+      <body>
+      <form class="calculator"  onSubmit={this.handlePrint}>
+      <span>When is Your Birthday?</span>
+        <select  class="browser-default" name="month">
           <option value="">Month</option>
           {
             months.map( month => <option key={month} value={month}>{month}</option>)
           }
         </select>
-        <select name="day">
+        <select  class="browser-default" name="day">
           <option value="">Day</option>
           {
             days.map( day => <option key={day} value={day}>{day}</option>)
           }
-        </select>
-        <button id="submit" type="submit"> Submit </button>
-      </form>
-
-      {
-        this.state.sign && <Link to={`/zodiac/${this.state.sign}`} onSubmit={this.goToSign} testProp={'hello!'}><button id="sign-result">{this.state.sign}</button></Link>
-      }
-    </div>
+          </select>
+          <button id="submit" type="submit"> Submit </button>
+          </form>
+          <break/>
+          <div id="sign-result-button">
+          {
+            this.state.sign && <Link to={`/zodiac/${this.state.sign}`} onSubmit={this.goToSign}>{this.state.sign}</Link>
+          }
+          </div>
+          </body>
     )
   }
 }
