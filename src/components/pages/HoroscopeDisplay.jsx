@@ -1,7 +1,7 @@
 import React from 'react'
 import './HoroscopeDisplay.css'
 
-const MENU_OPTIONS = ["compatibility", "favorites", "mental_traits", "physical_traits"]
+const MENU_OPTIONS = ["famous_people", "favorites", "mental_traits", "physical_traits"]
 
 class HoroscopeDisplay extends React.Component{
 
