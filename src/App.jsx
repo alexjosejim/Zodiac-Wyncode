@@ -4,6 +4,7 @@ import HoroscopeDisplay from "./components/pages/HoroscopeDisplay"
 import Calculator from "./components/pages/Calculator"
 import Navigation from "./components/pages/Navigation"
 import Footer from "./components/pages/Footer"
+import Share from "./components/pages/Share"
 import "./components/Styles/Styles.css"
 
 
@@ -11,11 +12,12 @@ const App = () => {
   return (
     <BrowserRouter>
       <React.Fragment>
-      <Navigation/>
-        <Route exact path="/" component={ Calculator } />
-        <Route exact path='/zodiac/:zodiac' component={ HoroscopeDisplay } />
-      <Route exact path='/zodiac' component={Navigation} />
-      <Footer/>
+        <Share/>
+        <Navigation/>
+          <Route exact path="/" component={ Calculator } />
+          <Route exact path='/zodiac/:zodiac' component={ HoroscopeDisplay } />
+        <Route exact path='/zodiac' component={Navigation} />
+        <Footer/>
       </React.Fragment>
     </BrowserRouter>
   )
