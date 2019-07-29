@@ -57,11 +57,13 @@ class HoroscopeDisplay extends React.Component{
 									<h2></h2>
                     {
                       this.state.sunSign[this.state.menuSelected] &&
-                          this.state.sunSign[this.state.menuSelected].map( elem => {
-                          return(
-                            <p>{elem}</p>
-                          )
-                        })
+                        this.state.sunSign[this.state.menuSelected].map( elem => {
+                        let columns =  this.state.menuSelected === 'famous_people' ? { width: '33%', display: 'inline-block' } : {}
+
+                        return(
+                          <p style={columns}>{elem}</p>
+                        )
+                      })
                     }
 								</section>
 
