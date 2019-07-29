@@ -1,0 +1,19 @@
+#horoscope-display {
+  color: #fff;
+}
+
+#horoscope-display li {
+  cursor: pointer;
+  transition: all ease .5s;
+}
+
+#horoscope-display li:hover {
+  position: relative;
+  color: #ffa;
+  top: -2px;
+  left: -2px;
+}
+
+.border {
+  color: #fff
+}
