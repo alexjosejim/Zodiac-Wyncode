@@ -6623,6 +6623,11 @@ node-fetch@^1.0.1:
     encoding "^0.1.11"
     is-stream "^1.0.1"
 
+node-fetch@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
+  integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
+
 node-forge@0.7.5:
   version "0.7.5"
   resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-0.7.5.tgz#6c152c345ce11c52f465c2abd957e8639cd674df"
@@ -8080,7 +8085,11 @@ prop-types-extra@^1.1.0:
     react-is "^16.3.2"
     warning "^3.0.0"
 
+<<<<<<< HEAD
 prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+=======
+prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+>>>>>>> 18b31a80bdb5e01d2f46c6b978ce31c4bd2ba9f4
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -8446,6 +8455,7 @@ react-scripts@^3.0.1:
   optionalDependencies:
     fsevents "2.0.6"
 
+<<<<<<< HEAD
 react-share@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/react-share/-/react-share-3.0.0.tgz#4855cfccfadbb3c6ef490047ccd144dc38ff7421"
@@ -8456,6 +8466,8 @@ react-share@^3.0.0:
     jsonp "^0.2.1"
     prop-types "^15.5.8"
 
+=======
+>>>>>>> 18b31a80bdb5e01d2f46c6b978ce31c4bd2ba9f4
 react-transition-group@^4.0.0:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.2.1.tgz#61fc9e36568bff9a1fe4e60fae323c8a6dbc0680"
