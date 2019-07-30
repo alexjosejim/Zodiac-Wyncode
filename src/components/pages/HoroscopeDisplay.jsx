@@ -1,10 +1,5 @@
 import React from 'react'
-<<<<<<< HEAD
-
-=======
-import './HoroscopeDisplay.css'
 import Share from './Share'
->>>>>>> 78c7a486a05abf7000fd260424b303d433655336
 
 const MENU_OPTIONS = ["famous_people", "favorites", "mental_traits", "physical_traits"]
 
