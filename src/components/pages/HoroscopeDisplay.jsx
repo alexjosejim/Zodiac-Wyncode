@@ -1,5 +1,6 @@
 import React from 'react'
 import './HoroscopeDisplay.css'
+import Share from './Share'
 
 const MENU_OPTIONS = ["famous_people", "favorites", "mental_traits", "physical_traits"]
 
@@ -66,6 +67,10 @@ class HoroscopeDisplay extends React.Component{
                       })
                     }
 								</section>
+                <section>
+                  <h2>Share your horoscope</h2>
+                  <Share  />
+                </section>
 
 							</div>
 						</div>

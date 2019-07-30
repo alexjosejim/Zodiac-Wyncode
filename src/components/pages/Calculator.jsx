@@ -148,7 +148,6 @@ class Calculator extends React.Component {
             </div>
           }
         </div>
-      </div>
     )
   }
 }
