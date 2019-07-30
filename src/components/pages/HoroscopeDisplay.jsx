@@ -1,5 +1,5 @@
 import React from 'react'
-import './HoroscopeDisplay.css'
+
 
 const MENU_OPTIONS = ["famous_people", "favorites", "mental_traits", "physical_traits"]
 
