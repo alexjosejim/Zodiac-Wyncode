@@ -20,17 +20,18 @@ class HoroscopeDisplay extends React.Component{
   render(){
     console.log(this.props.testProp)
     return (
+    <body>
       <div>
         <div class="border" >
            <h1>{this.props.match.params.zodiac}</h1>
-           <small>{ this.state.sunSign.vibe }</small>
+           <h5>{ this.state.sunSign.vibe }</h5>
         </div>
 
 				<div id="main">
 					<div id="horoscope-display" class="container">
-						<div class="row main-row">
-							<div class="col-12 col-sm-4">
-								<section>
+						<div class="row" cl>
+							<div class="col-12 col-md-4">
+								<section className="border">
 									<h2>Options</h2>
 									<ul>
 									  {
@@ -51,9 +52,9 @@ class HoroscopeDisplay extends React.Component{
 									</ul>
 								</section>
 							</div>
-							<div class="col-12 col-sm-8 col-12-medium imp-medium">
+							<div class="col-12 col-md-8 imp-medium">
 
-								<section>
+								<section className="horoscope-content ">
 									<h2></h2>
                     {
                       this.state.sunSign[this.state.menuSelected] &&
@@ -66,7 +67,7 @@ class HoroscopeDisplay extends React.Component{
                       })
                     }
 								</section>
-                <section>
+                <section className="share">
                   <h2>Share your horoscope</h2>
                   <Share  />
                 </section>
@@ -75,9 +76,8 @@ class HoroscopeDisplay extends React.Component{
 						</div>
 					</div>
 				</div>
-
-
       </div>
+    </body>
 
     )
   }

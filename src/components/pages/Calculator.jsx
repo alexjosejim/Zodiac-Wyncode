@@ -122,6 +122,7 @@ class Calculator extends React.Component {
 
   render(){
     return (
+      <body>
       <div>
         <form class="calculator"  onSubmit={this.handlePrint}>
           <span>When is Your Birthday?</span>
@@ -147,6 +148,7 @@ class Calculator extends React.Component {
             </div>
           }
         </div>
+        </body>
     )
   }
 }

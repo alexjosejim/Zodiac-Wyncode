@@ -1,35 +1,15 @@
 body  {
   background: url("https://images.wallpaperscraft.com/image/mountains_night_sky_stars_92704_2560x1440.jpg");
   min-height: 100vh;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Varela Round', sans-serif;
   color:white;
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
   font-size-adjust: auto;
 }
-#horoscope-display {
-  color: #fff;
-}
-
-#horoscope-display li {
-  cursor: pointer;
-  transition: all ease .5s;
-}
-
-#horoscope-display li:hover {
-  position: relative;
-  color: #ffa;
-  top: -2px;
-  left: -2px;
-}
-
-.border {
-  color: #fff
-}
 #submit {
   background-color:#505980;
-  padding: 5px 15px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -88,11 +68,22 @@ nav {
   letter-spacing: 10px;
   border-radius:8px;
   display: flex;
-  align-items: center;
-  align-content:stretch;
-  column-count: 2;
+   align-items: center;
+   justify-content: center;
 }
 
+.share {
+  background-color: #111;
+  color: #fff;
+    border-radius: 7px
+}
+
+.horoscope-content{
+  background-color: #111;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 7px;
+}
 
 footer {
   background-color: #111;
@@ -100,14 +91,46 @@ footer {
   padding-bottom: 0;
   flex: 50%;
   margin-bottom: 0;
-  height: 100px;
+  height: 200px;
 }
-li {
-   display: inline;
-   padding-left: 30px;
-   font-size: 25px;
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.nav ul li a {
+  font-size: 25px;
  }
-select{
-  font-size: 20px;
+.calculator select{
+  font-size:20px;
   flex: 50%;
+  display: list-item;
+}
+
+#horoscope-display {
+  color: #fff;
+}
+
+#horoscope-display li {
+  cursor: pointer;
+  transition: all ease .5s;
+}
+
+#horoscope-display li:hover {
+  position: relative;
+  color: #ffa;
+  top: -2px;
+  left: -2px;
+}
+a.twitter {
+  background-image: url('file:///C:/Users/Vannessa/Downloads/iconfinder-icon.svg');
+}
+/* a.linkedin {
+  background-image: url(images/linkedin.svg);
+}
+a.github {
+  background-image: url(images/github.svg); */
+/* } */
+a.social:hover {
+  opacity: 1;
 }

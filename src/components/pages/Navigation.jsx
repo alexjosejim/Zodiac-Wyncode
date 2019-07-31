@@ -7,12 +7,12 @@ const signs = ["Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "
 const Navigation= () =>{
     return (
         <nav className="nav" sticky="top">
-          <div>
+          <ul>
             <Link  to='/' id="submit">Home</Link>
              {
                 signs.map(sign => <li><Link to={`/zodiac/${sign}`}>{sign}</Link></li>)
               }
-          </div>
+          </ul>
         </nav>
     )
   }

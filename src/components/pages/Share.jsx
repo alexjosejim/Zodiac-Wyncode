@@ -16,7 +16,7 @@ class Share extends React.Component{
           url="http://localhost:3000"
         >
 
-        <TwitterIcon size={32} round={true} />
+        <TwitterIcon size={32} round={true}/>
         </TwitterShareButton>
 
       </div>
