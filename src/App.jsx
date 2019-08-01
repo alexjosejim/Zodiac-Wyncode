@@ -4,6 +4,7 @@ import HoroscopeDisplay from "./components/pages/HoroscopeDisplay"
 import Calculator from "./components/pages/Calculator"
 import Navigation from "./components/pages/Navigation"
 import Footer from "./components/pages/Footer"
+import Share from "./components/pages/Share"
 import "./components/Styles/Styles.css"
 import "bootstrap/dist/css/bootstrap.css"
 

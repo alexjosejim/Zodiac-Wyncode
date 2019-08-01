@@ -1,5 +1,5 @@
 import React from 'react'
-import './HoroscopeDisplay.css'
+import Share from './Share'
 
 const MENU_OPTIONS = ["famous_people", "favorites", "mental_traits", "physical_traits"]
 
@@ -20,18 +20,18 @@ class HoroscopeDisplay extends React.Component{
   render(){
     console.log(this.props.testProp)
     return (
-      <body>
+    <body>
       <div>
         <div class="border" >
            <h1>{this.props.match.params.zodiac}</h1>
-           <small>{ this.state.sunSign.vibe }</small>
+           <h5>{ this.state.sunSign.vibe }</h5>
         </div>
 
 				<div id="main">
 					<div id="horoscope-display" class="container">
-						<div class="row main-row">
-							<div class="col-12 col-sm-4">
-								<section>
+						<div class="row" cl>
+							<div class="col-12 col-md-4">
+								<section className="border">
 									<h2>Options</h2>
 									<ul>
 									  {
@@ -52,10 +52,10 @@ class HoroscopeDisplay extends React.Component{
 									</ul>
 								</section>
 							</div>
-							<div class="col-12 col-sm-8 col-12-medium imp-medium">
+							<div class="col-12 col-md-8 imp-medium">
 
-								<section>
-									<h2></h2>
+  							<section className="horoscope-content ">
+  								<h2></h2>
                     {
                       this.state.sunSign[this.state.menuSelected] &&
                         this.state.sunSign[this.state.menuSelected].map( elem => {
@@ -66,13 +66,17 @@ class HoroscopeDisplay extends React.Component{
                         )
                       })
                     }
-								</section>
-              </div>
-						</div>
-					</div>
-				</div>
-      </div>
-    </body>
+  							</section>
+                </div>
+                  <section className="share">
+                    <h2>Share your horoscope</h2>
+                    <Share  />
+                  </section>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+      </body>
 
     )
   }

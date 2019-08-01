@@ -122,6 +122,7 @@ class Calculator extends React.Component {
 
   render(){
     return (
+      <body>
       <div>
         <form class="calculator"  onSubmit={this.handlePrint}>
           <span>When is Your Birthday?</span>
@@ -138,13 +139,16 @@ class Calculator extends React.Component {
             }
           </select>
           <button id="submit" type="submit"> Submit </button>
-        </form>
-        <div id="sign-result-button">
+          </form>
+          <br/>
           {
-            this.state.sign && <Link to={`/zodiac/${this.state.sign}`} onSubmit={this.goToSign}>{this.state.sign}</Link>
+            this.state.sign &&
+            <div id="sign-result-button">
+              <Link to={`/zodiac/${this.state.sign}`} onSubmit={this.goToSign}>{this.state.sign}</Link>
+            </div>
           }
         </div>
-      </div>
+        </body>
     )
   }
 }
