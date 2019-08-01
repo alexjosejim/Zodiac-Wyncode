@@ -7,7 +7,7 @@ class HoroscopeDisplay extends React.Component{
 
   state = {
     sunSign: {},
-    menuSelected: "compatibility"
+    menuSelected: "mental_traits"
   }
 
   componentDidMount (){
@@ -54,8 +54,8 @@ class HoroscopeDisplay extends React.Component{
 							</div>
 							<div class="col-12 col-md-8 imp-medium">
 
-								<section className="horoscope-content ">
-									<h2></h2>
+  							<section className="horoscope-content ">
+  								<h2></h2>
                     {
                       this.state.sunSign[this.state.menuSelected] &&
                         this.state.sunSign[this.state.menuSelected].map( elem => {
@@ -66,27 +66,20 @@ class HoroscopeDisplay extends React.Component{
                         )
                       })
                     }
-								</section>
-                <section className="share">
-                  <h2>Share your horoscope</h2>
-                  <Share  />
-                </section>
-
-							</div>
-						</div>
-					</div>
-				</div>
-      </div>
-    </body>
+  							</section>
+                </div>
+                  <section className="share">
+                    <h2>Share your horoscope</h2>
+                    <Share  />
+                  </section>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+      </body>
 
     )
   }
 }
-
-
-
-
-
-
 
 export default HoroscopeDisplay
