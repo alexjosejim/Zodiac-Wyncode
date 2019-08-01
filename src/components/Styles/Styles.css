@@ -8,6 +8,9 @@ body  {
   background-size: cover;
   font-size-adjust: auto;
 }
+#root {
+  min-height: calc(100vh - 306px)
+}
 
 #submit {
   background-color:#505980;
@@ -81,8 +84,9 @@ footer {
   color: white;
   padding-bottom: 0;
   flex: 50%;
-  margin-bottom: 0;
-  height: 100px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  height: 250px;
 }
 .nav li {
    display: inline;

@@ -13,7 +13,16 @@
   top: -2px;
   left: -2px;
 }
-
-.border {
-  color: #fff
+.img right {
+  width: 30%;
+}
+#copyright {
+  text-align: -webkit-center;
+}
+#address {
+  text-align: -webkit-right;
+}
+h2 {
+  text-align: -webkit-center;
+  font-style: oblique;
 }

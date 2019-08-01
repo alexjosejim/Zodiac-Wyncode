@@ -7,7 +7,7 @@ class HoroscopeDisplay extends React.Component{
 
   state = {
     sunSign: {},
-    menuSelected: "compatibility"
+    menuSelected: "mental_traits"
   }
 
   componentDidMount (){
@@ -20,6 +20,7 @@ class HoroscopeDisplay extends React.Component{
   render(){
     console.log(this.props.testProp)
     return (
+      <body>
       <div>
         <div class="border" >
            <h1>{this.props.match.params.zodiac}</h1>
@@ -66,23 +67,15 @@ class HoroscopeDisplay extends React.Component{
                       })
                     }
 								</section>
-
-							</div>
+              </div>
 						</div>
 					</div>
 				</div>
-
-
       </div>
+    </body>
 
     )
   }
 }
-
-
-
-
-
-
 
 export default HoroscopeDisplay
