@@ -8,6 +8,11 @@ body  {
   background-size: cover;
   font-size-adjust: auto;
 }
+
+#root {
+  min-height: calc(100vh - 306px)
+}
+
 #submit {
   background-color:#505980;
   border: none;
@@ -98,6 +103,7 @@ footer {
   flex-direction: row;
   justify-content: space-around;
 }
+
 .nav ul li a {
   font-size: 25px;
  }

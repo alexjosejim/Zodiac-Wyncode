@@ -1,0 +1,29 @@
+#horoscope-display {
+  color: #fff;
+}
+
+#horoscope-display li {
+  cursor: pointer;
+  transition: all ease .5s;
+}
+
+#horoscope-display li:hover {
+  position: relative;
+  color: #ffa;
+  top: -2px;
+  left: -2px;
+}
+.img right {
+  width: 30%;
+}
+#copyright {
+  text-align: -webkit-center;
+}
+#address {
+  text-align: -webkit-right;
+}
+
+h2 {
+  text-align: -webkit-center;
+  font-style: oblique;
+}
