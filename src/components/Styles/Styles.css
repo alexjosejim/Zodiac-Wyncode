@@ -140,3 +140,18 @@ a.github {
 a.social:hover {
   opacity: 1;
 }
+
+.img right {
+  width: 30%;
+}
+#copyright {
+  text-align: -webkit-center;
+}
+#address {
+  text-align: -webkit-right;
+}
+
+h2 {
+  text-align: -webkit-center;
+  font-style: oblique;
+}
