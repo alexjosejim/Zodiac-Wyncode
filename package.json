@@ -10,7 +10,7 @@
     "debug": "~4.1.1",
     "express": "^4.16.4",
     "morgan": "^1.9.1",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^3.1.1",
     "react": "^16.8.4",
     "react-bootstrap": "^1.0.0-beta.10",
     "react-dom": "^16.8.4",
